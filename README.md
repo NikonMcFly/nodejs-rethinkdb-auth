@@ -6,4 +6,5 @@ create endpoints
 
 post to api/users
 
-add users to database
+connect to database and post username password
+to database. And add tokens and username
