@@ -10,13 +10,13 @@ var User = thinky.createModel('user', {
 });
 
 User.pre('save', function(next) {
-  if (!this.isModified('password')) return next();
 
-  this.password = this.encryptPassword(this.password);
+
+  this.password = method.encryptPassword(this.password);
   next();
 })
 
-User.methods = {
+method = {
   // check the passwords on signin
   authenticate: function(plainTextPword) {
     return bcrypt.compareSync(plainTextPword, this.password);

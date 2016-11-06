@@ -6,7 +6,7 @@ var config = {
   prod: 'production',
   port: process.env.PORT || 3000,
   // 10 days in minutes
-  expiresIn: 25 * 60 * 10,
+  expiresIn: 1000,
   secrets: {
     jwt: process.env.JWT || 'gumball',
     stripe: process.env.STRIPE || 'stripe password'

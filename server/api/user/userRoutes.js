@@ -10,6 +10,7 @@ var checkUser = [auth.decodeToken(), auth.getFreshUser()];
 router.route('/')
   .get(controller.get)
   .post(controller.post)
+  .delete(controller.delete)
 
 
 module.exports = router;

@@ -23,7 +23,7 @@ var cleanDB = function() {
   logger.log('... cleaning the DB');
   var cleanPromises = [User]
     .map(function(model) {
-      return model;
+      return model.delete().execute();
     });
   return Promise.all(cleanPromises);
 }

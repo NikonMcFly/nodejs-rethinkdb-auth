@@ -72,7 +72,6 @@ exports.verifyUser = function() {
 exports.signToken = function(id) {
   return jwt.sign(
     {_id: id},
-    config.secrets.jwt,
-    {expiredMinutes: config.expiresIn}
+    config.secrets.jwt
   );
 };
