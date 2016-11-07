@@ -47,9 +47,7 @@ exports.post = function(req, res, next) {
 }
 
 exports.delete = function(req, res, next){
-  var id = req.params.id;
-  User.get(id).delete().run().then(function(error, result){
-    console.log("deleted user")
+  db_promise.then(function(con){
+    return r.table('user').delete().run(con)
   })
-
 }

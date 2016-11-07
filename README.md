@@ -4,10 +4,12 @@
 figure out what the hell im building...
 
 #install
+install rethinkdb
 
 ```bash
 $git clone project url
 
+$rethinkdb
 $npm install --save
 ```
 
