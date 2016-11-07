@@ -4,10 +4,12 @@
 figure out what the hell im building...
 
 #install
-git clone project
 
-npm install --save
+```bash
+$git clone project url
 
+$npm install --save
+```
 
 #todo endpoints
 
