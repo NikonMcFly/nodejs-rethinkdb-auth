@@ -1,10 +1,23 @@
 
 
 #ToDo
+figure out what the hell im building...
 
-create endpoints
+#install
+git clone project
 
-post to api/users
+npm install --save
 
-connect to database and post username password
+
+#todo endpoints
+
+xx post to api/users
+
+xx get  from api/users
+
+delete from api/users
+
+#todo auth
+
+xx connect to database and post username password
 to database. And add tokens and username

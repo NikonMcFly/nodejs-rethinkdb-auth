@@ -7,7 +7,7 @@ var auth = require('./auth/routes');
 // db.url is different depending on NODE_ENV
 
 var r = require('rethinkdb');
-r.connect(config.host)
+r.connect(config.launch)
 
 
 if (config.seed) {
